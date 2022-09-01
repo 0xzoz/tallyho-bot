@@ -1,7 +1,7 @@
 {
     "bot": {
-        "name": "My Bot",
-        "author": "My Name"
+        "name": "Tally Bot",
+        "author": "0xzoz"
     },
     "chatCommands": {
         "help": "help",
@@ -24,14 +24,14 @@
         "error": "#ff4a4a"
     },
     "links": {
-        "author": "https://github.com/",
-        "docs": "https://top.gg/",
-        "donate": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=EW389DYYSS4FC",
-        "invite": "https://discord.com/",
+        "author": "https://github.com/0xzoz",
+        "docs": "https://github.com/0xzoz/tallyho-bot#readme",
+        "donate": "zoz.eth",
+        "invite": "",
         "source": "https://github.com/",
-        "stream": "https://www.twitch.tv/novakevin",
-        "support": "https://support.discord.com/",
-        "template": "https://github.com/KevinNovak/Discord-Bot-TypeScript-Template",
+        "stream": "https://github.com/0xzoz/tallyho-bot",
+        "support": "",
+        "template": "",
         "vote": "https://top.gg/"
     }
 }

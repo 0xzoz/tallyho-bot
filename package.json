@@ -1,8 +1,8 @@
 {
-    "name": "my-bot",
+    "name": "tallyho-bot",
     "version": "1.0.0",
-    "author": "Kevin Novak",
-    "description": "A discord.js bot template written with TypeScript",
+    "author": "0xzoz",
+    "description": "A discord.js bot built for the Tallyho server",
     "license": "MIT",
     "private": true,
     "engines": {
