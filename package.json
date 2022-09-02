@@ -1,7 +1,7 @@
 {
     "name": "tallyho-bot",
     "version": "1.0.0",
-    "author": "0xzoz",
+    "author": "0xzoz & @beemeeupnow",
     "description": "A discord.js bot built for the Tallyho server",
     "license": "MIT",
     "private": true,

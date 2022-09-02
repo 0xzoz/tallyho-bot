@@ -1,7 +1,7 @@
 {
     "bot": {
         "name": "Tally Bot",
-        "author": "0xzoz"
+        "author": "0xzoz & @beemeeupnow"
     },
     "chatCommands": {
         "help": "help",
@@ -27,7 +27,7 @@
         "author": "https://github.com/0xzoz",
         "docs": "https://github.com/0xzoz/tallyho-bot#readme",
         "donate": "zoz.eth",
-        "invite": "",
+        "invite": "https://discord.com/api/oauth2/authorize?client_id=1014936040370352249&scope=applications.commands",
         "source": "https://github.com/",
         "stream": "https://github.com/0xzoz/tallyho-bot",
         "support": "",
