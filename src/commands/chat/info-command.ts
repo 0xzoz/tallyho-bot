@@ -1,5 +1,4 @@
 import {
-    ApplicationCommandOptionType,
     ApplicationCommandType,
     RESTPostAPIChatInputApplicationCommandsJSONBody,
 } from 'discord-api-types/v10';
@@ -9,6 +8,7 @@ import { createRequire } from 'node:module';
 import os from 'node:os';
 import typescript from 'typescript';
 
+import { ChatArgs } from '../../constants/index.js';
 import { InfoOption, LangCode } from '../../enums/index.js';
 import { Language } from '../../models/enum-helpers/index.js';
 import { EventData } from '../../models/internal-models.js';
@@ -23,30 +23,16 @@ let TsConfig = require('../../../tsconfig.json');
 export class InfoCommand implements Command {
     public metadata: RESTPostAPIChatInputApplicationCommandsJSONBody = {
         type: ApplicationCommandType.ChatInput,
-        name: Lang.getCom('chatCommands.info'),
+        name: Lang.getRef('chatCommands.info', Lang.Default),
+        name_localizations: Lang.getRefLocalizationMap('chatCommands.info'),
         description: Lang.getRef('commandDescs.info', Lang.Default),
+        description_localizations: Lang.getRefLocalizationMap('commandDescs.info'),
         dm_permission: true,
         default_member_permissions: undefined,
         options: [
             {
-                name: Lang.getCom('arguments.option'),
-                description: 'Option.',
+                ...ChatArgs.INFO_OPTION,
                 required: true,
-                type: ApplicationCommandOptionType.String,
-                choices: [
-                    {
-                        name: Lang.getRef('infoOptions.about', Lang.Default),
-                        value: InfoOption.ABOUT,
-                    },
-                    {
-                        name: Lang.getRef('infoOptions.translate', Lang.Default),
-                        value: InfoOption.TRANSLATE,
-                    },
-                    {
-                        name: Lang.getRef('infoOptions.dev', Lang.Default),
-                        value: InfoOption.DEV,
-                    },
-                ],
             },
         ],
     };
@@ -54,7 +40,7 @@ export class InfoCommand implements Command {
     public requireClientPerms: PermissionString[] = [];
 
     public async execute(intr: CommandInteraction, data: EventData): Promise<void> {
-        let option = intr.options.getString(Lang.getCom('arguments.option'));
+        let option = intr.options.getString(Lang.getRef('arguments.option', Lang.Default));
 
         let embed: MessageEmbed;
         switch (option) {
