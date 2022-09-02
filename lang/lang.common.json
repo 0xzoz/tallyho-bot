@@ -3,19 +3,9 @@
         "name": "Tally Bot",
         "author": "0xzoz"
     },
-    "chatCommands": {
-        "help": "help",
-        "info": "info",
-        "test": "test"
-    },
-    "userCommands": {
-        "viewDateJoined": "View Date Joined"
-    },
-    "messageCommands": {
-        "viewDateSent": "View Date Sent"
-    },
-    "arguments": {
-        "option": "option"
+    "emojis": {
+        "yes": "✅",
+        "no": "❌"
     },
     "colors": {
         "default": "#0099ff",
